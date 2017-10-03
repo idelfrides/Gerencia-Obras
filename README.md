@@ -78,6 +78,15 @@ O sistema deverá conter dados do SEINFRA como modelo de orçamento e gerenciame
 6. Requisitos de Sistema
 
 Servidor Apache processando a linguagem PHP na versão 7.1
+
+
+Atividades:
+1. Criação do DB e tabelas:
+- DB: gerencia_obras
+- Tabelas: cadastro_usuario, cadastro_cliente, cadastro_obra, (...)
+2. Login - Validação no Banco de Dados do Usuário, por meio de senha e nome de usuário.
+3. Cadastro - Inserir o usuário no banco de dados, guardando: nome de usuário, senha, empresa, nome completo. endereço, CPF, rg, nível de acesso.
+4. Recuperação de Senha, por meio de link enviado para o email, onde será redirecionado para uma página de renovação de senha.
 Necessário para os dispositivos de acesso um mínimo de 512 MB de memória RAM.
 Acesso deve ser feito pelos navegadores Google Chrome na versão mínima 60.0.3112.90, Mozilla Firefox na versão mínima 52.0.2
 O servidor deve ter suporte a banco de dados MySQL versão 6.3
