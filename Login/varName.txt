@@ -1,0 +1,11 @@
+TELA LOGIN
+
+email -> id:cpfUsuario / name:emailUsuario
+
+senha -> id:senhaUsuario / name:senhaUsuario
+
+esqueceu a senha -> id: forgetPassword / name: forgetPassword
+
+Cadastrar-se -> id: cadastrarUsuario / name: cadastrarUsuario 
+
+entrar -> id: entrar/ name: submit
