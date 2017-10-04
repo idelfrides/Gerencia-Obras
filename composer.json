@@ -1,0 +1,18 @@
+{
+  "name":"gerenciaObras",
+  "require":{
+    "php": ">=7.1"
+  },
+  "authors":[
+    {
+      "name":"Francisco Matias",
+      "email":"franciscomatias@alu.ufc.br"
+    }
+  ],
+  "autoload":{
+    "psr-4":{
+      "SON\\":"vendor/SON",
+      "App\\":"App/"
+    }
+  }
+}
