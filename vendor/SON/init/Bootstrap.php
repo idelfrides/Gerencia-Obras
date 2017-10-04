@@ -19,6 +19,22 @@ abstract class Bootstrap{
         $this->initRoutes();
         $this->run($this->getUrl());
     }
+    private function getRequest(){
+
+        $vetor = array();
+
+
+        foreach ($_GET as $key => $value) {
+
+            $vetor[$key] = $value;
+
+        }
+        foreach ($_POST as $key => $value) {
+            $vetor[$key] = $value;
+
+        }
+        return $vetor;
+    }
     abstract  protected function initRoutes();
     protected function run($url){
         $found = false;
@@ -28,7 +44,7 @@ abstract class Bootstrap{
                 $class = "App\\Controllers\\".ucfirst($route['controller']);
                 $controller = new $class;
                 $action = $route['action'];
-                $controller->$action();
+                $controller->$action($this->getRequest());
                 $found = true;
                 break;
             }
@@ -46,5 +62,6 @@ abstract class Bootstrap{
     protected function getUrl(){
         return parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     }
+
 
 }
