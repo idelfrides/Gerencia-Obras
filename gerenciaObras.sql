@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 04, 2017 at 06:23 AM
+-- Generation Time: Oct 04, 2017 at 07:34 PM
 -- Server version: 10.1.24-MariaDB
 -- PHP Version: 7.1.6
 
@@ -36,15 +36,16 @@ CREATE TABLE `usuario` (
   `enderecoUsuario` varchar(200) NOT NULL,
   `cpfUsuario` varchar(14) NOT NULL,
   `rgUsuario` int(11) NOT NULL,
-  `empresaUsuario` varchar(45) NOT NULL
+  `empresaUsuario` varchar(45) NOT NULL,
+  `nivelAcessoUsuario` varchar(45) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `usuario`
 --
 
-INSERT INTO `usuario` (`id`, `nomeUsuario`, `emailUsuario`, `senhaUsuario`, `enderecoUsuario`, `cpfUsuario`, `rgUsuario`, `empresaUsuario`) VALUES
-(1, 'Idelfrides Jorge', '', 'idel@alu.ufc.br', '81dc9bdb52d04dc20036dbd8313ed055', 'rua conego joao 200 apt 101 Fortaleza - CE 60455305', '044.222.222-71', '2002002008829','OAS');
+INSERT INTO `usuario` (`id`, `nomeUsuario`, `emailUsuario`, `senhaUsuario`, `enderecoUsuario`, `cpfUsuario`, `rgUsuario`, `empresaUsuario`, `nivelAcessoUsuario`) VALUES
+  (1, '1', 'franciscomatias@alu.ufc.br', '81dc9bdb52d04dc20036dbd8313ed055', '1', '1', 1, '1', '1');
 
 --
 -- Indexes for dumped tables
