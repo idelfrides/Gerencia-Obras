@@ -21,16 +21,24 @@ abstract class Bootstrap{
     }
     abstract  protected function initRoutes();
     protected function run($url){
-        array_walk($this->routes, function ($route) use ($url){
+        $found = false;
+        foreach($this->routes as $route){
+
             if ($url == $route['route']){
                 $class = "App\\Controllers\\".ucfirst($route['controller']);
                 $controller = new $class;
                 $action = $route['action'];
                 $controller->$action();
-            }else{
-                Container::pageNotFound();
+                $found = true;
+                break;
             }
-        });
+
+        }
+        if ($found === false){
+            Container::pageNotFound();
+        }
+
+
     }
     protected function setRoutes(array $routes){
         $this->routes = $routes;

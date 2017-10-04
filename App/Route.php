@@ -13,6 +13,8 @@ class Route extends Bootstrap {
 
     protected function initRoutes(){
         $routes['home'] = array('route'=>'/Gerencia-Obras/public/', 'controller'=>"indexController",'action'=>'index');
+        $routes['login'] = array('route'=>'/Gerencia-Obras/public/login', 'controller'=>"indexController",'action'=>'login');
+
         $this->setRoutes($routes);
     }
 

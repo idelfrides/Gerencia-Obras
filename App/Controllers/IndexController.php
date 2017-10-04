@@ -23,6 +23,11 @@ class IndexController extends Action {
         $this->render("index",false);
 
     }
+    public function login(){
+
+        var_dump($request->post());
+
+    }
 
 
 }
