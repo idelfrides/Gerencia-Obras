@@ -9,3 +9,7 @@ esqueceu a senha -> id: forgetPassword / name: forgetPassword
 Cadastrar-se -> id: cadastrarUsuario / name: cadastrarUsuario 
 
 entrar -> id: entrar/ name: submit
+
+TELA PRINCIPAL
+
+Logout -> id: logout / name: logout
