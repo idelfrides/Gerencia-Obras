@@ -1,0 +1,15 @@
+
+Route: / Controller: indexController   Action: index View: index.phtml
+
+</br>
+
+<br/>
+
+<?php foreach($this->views->usuario as $usuario): ?>
+
+    <p><?= $usuario['codigoUsuario'] ?></p>
+    <p><?= $usuario['nomeUsuario'] ?></p>
+    <hr>
+    <p><?= $usuario['cpfUsuario'] ?></p>
+
+<?php endforeach; ?>
