@@ -30,4 +30,7 @@ class IndexController extends Action {
     public function home(){
         $this->render("home");
     }
+    public function cadastroUsuario(){
+
+    }
 }

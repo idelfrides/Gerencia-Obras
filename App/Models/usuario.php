@@ -64,7 +64,7 @@ class usuario extends Table{
             header('Location:/Gerencia-Obras/public/home');
 
         }else{
-            header('Location:/Gerencia-Obras/public?erro=1');
+            header('Location:/Gerencia-Obras/public/?erro=1');
 
         }
 

@@ -5,21 +5,30 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../../../public/assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/377f60039f.js"></script>
 </head>
 <body>
+<style>
+    .sameWidth {
+        width: 120%;
+        align
+    }
+
+</style>
 <br>
 <br>
 <!-- Fomulário de Login de usuario -->
-<form id="form_login" method="post" action="/Gerencia-Obras/public/login">
+<form id="form_login" method="get" action="/Gerencia-Obras/public/login">
 
-<div  class="container">
-    <div  class="row justify-content-center">
-        <div class="col col-4">
+    <div  class="container">
+        <div  class="row justify-content-center">
+            <div class="col col-6">
                 <div class="form-group">
                     <label for="usuario_cpf">Login <i class="fa fa-sign-in" aria-hidden="true"></i></label>
                 </div>
@@ -31,17 +40,33 @@
                     <label for="senhaUsuario">Senha:</label>
                     <input class="form-control" type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha do usuario" required>
                 </div>
+            </div>
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col col-4">
-            <div class="form-group ">
-                <input type="submit" value="Entrar" name="submit" class="btn btn-success">
+        <p>
+            <button id="forgetPassword" name="forgetPassword" type="button" class="btn btn-link btn-sm btn-block">Esqueci minha senha</button>
+        </p>
+        <div class="row justify-content-center container" >
+            <div class="row">
+
+                <div class="col col-6 form-group">
+                    <a href="/Gerencia-Obras/public/cadastro"><button id="cadastrarUsuario" name="cadastrarUsuario" type="button" class="sameWidth btn btn-outline-info">Cadastrar-se</button></a>
+                </div>
+
+                <div class="col col-6 form-group">
+                    <input id="entrar" type="submit" value="Entrar" name="submit" class="sameWidth btn btn-success">
+                </div>
+
             </div>
         </div>
 
+
+
+        <!-- <input href="" type="submit" class="btn btn-success" id="btn_login_usuario" value="Entrar" name="btn_login_usuario"> -->
     </div>
-</div>
+    </div>
+
+    </div>
+    </div>
 </form>
 
 <!-- / Fomulário de Login -->
