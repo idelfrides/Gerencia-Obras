@@ -19,7 +19,7 @@ abstract class Action{
         $this->views = new \stdClass();
 
     }
-    protected function render($action, $layout=true){
+    protected function render($action, $layout = true){
         $this->action = $action;
         if ($layout == true and file_exists("../App/Views/layout.phtml")){
                 include_once "../App/Views/layout.phtml";

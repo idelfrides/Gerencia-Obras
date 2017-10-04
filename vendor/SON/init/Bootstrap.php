@@ -9,6 +9,8 @@
 namespace SON\Init;
 
 
+use SON\DI\Container;
+
 abstract class Bootstrap{
 
     private $routes;
@@ -25,6 +27,8 @@ abstract class Bootstrap{
                 $controller = new $class;
                 $action = $route['action'];
                 $controller->$action();
+            }else{
+                Container::pageNotFound();
             }
         });
     }

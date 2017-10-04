@@ -15,4 +15,5 @@ class usuario extends Table {
 
     protected $table = "usuario";
 
+
 }

@@ -1,15 +1,66 @@
 
-Route: / Controller: indexController   Action: index View: index.phtml
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../public/assets/css/style.css">
 
-</br>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/377f60039f.js"></script>
+</head>
+<body>
+<br>
+<br>
+<!-- Fomulário de Login de usuario -->
+<form id="form_login" method="post" action="<?= $_SERVER['PHP_SELF'];?>">
 
-<br/>
+<div  class="container">
+    <div  class="row justify-content-center">
+        <div class="col col-4">
+                <div class="form-group">
+                    <label for="usuario_cpf">Login <i class="fa fa-sign-in" aria-hidden="true"></i></label>
+                </div>
+                <div class="form-group">
+                    <label for="cpfUsuario">Email:</label>
+                    <input  class="form-control" id="cpfUsuario" name="emailUsuario" placeholder="exemplo@exemplo.com" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="senhaUsuario">Senha:</label>
+                    <input class="form-control" type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha do usuario" required>
+                </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col col-4">
+            <div class="form-group ">
+                <input type="submit" value="Entrar" name="submit" class="btn btn-success">
+                <!-- <input href="" type="submit" class="btn btn-success" id="btn_login_usuario" value="Entrar" name="btn_login_usuario"> -->
+            </div>
+        </div>
 
-<?php foreach($this->views->usuario as $usuario): ?>
+    </div>
+</div>
+</form>
 
-    <p><?= $usuario['codigoUsuario'] ?></p>
-    <p><?= $usuario['nomeUsuario'] ?></p>
-    <hr>
-    <p><?= $usuario['cpfUsuario'] ?></p>
+<!-- / Fomulário de Login -->
+<?php
 
-<?php endforeach; ?>
+?>
+<footer>
+
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<!-- importando ja
+
+vascript do bootstrap -->
+
