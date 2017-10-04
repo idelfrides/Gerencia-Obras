@@ -60,6 +60,7 @@ class usuario extends Table{
             $_SESSION['nivelAcessoUsuario'] = $row['nivelAcessoUsuario'];
             $_SESSION['id'] = $row['id'];
             $_SESSION['emailUsuario'] = $row['emailUsuario'];
+            $_SESSION['nomeUsuario'] = $row['nomeUsuario'];
             header('Location:/Gerencia-Obras/public/home');
 
         }else{
