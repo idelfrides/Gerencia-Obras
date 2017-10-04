@@ -9,9 +9,10 @@
 namespace App\Models;
 
 
+use App\Conn;
+use SON\DI\Container;
 use SON\Model\Table;
-session_start();
-class usuario extends Table {
+class usuario extends Table{
 
     protected $table = "usuario";
     private $id;
@@ -22,8 +23,6 @@ class usuario extends Table {
     private $cpfUsuario;
     private $rgUsuario;
     private $empresaUsuario;
-
-
 
     /**
      * usuario constructor.
@@ -36,7 +35,7 @@ class usuario extends Table {
      * @param $rgUsuario
      * @param $empresaUsuario
      */
-    public function __construct($id, $nomeUsuario, $emailUsuario, $senhaUsuario, $enderecoUsuario, $cpfUsuario, $rgUsuario, $empresaUsuario)
+    public function __construct($id=null, $nomeUsuario=null, $emailUsuario=null, $senhaUsuario=null, $enderecoUsuario=null, $cpfUsuario=null, $rgUsuario=null, $empresaUsuario=null)
     {
         $this->id = $id;
         $this->nomeUsuario = $nomeUsuario;
@@ -47,7 +46,27 @@ class usuario extends Table {
         $this->rgUsuario = $rgUsuario;
         $this->empresaUsuario = $empresaUsuario;
     }
-    public function validarLogin($emailUsuario, $senhaUsuario){
+    public function validarLogin(){
+
+        $connexao = new Conn();
+
+        $cone = $connexao->getCon();
+
+        $query = "select * from usuario WHERE emailUsuario = '$this->emailUsuario'";
+        $resultado = mysqli_query($cone, $query);
+        $row = mysqli_fetch_array($resultado);
+
+        if ($row['senhaUsuario'] == $this->senhaUsuario){
+            $_SESSION['nivelAcessoUsuario'] = $row['nivelAcessoUsuario'];
+            $_SESSION['id'] = $row['id'];
+            $_SESSION['emailUsuario'] = $row['emailUsuario'];
+            header('Location:/Gerencia-Obras/public/home');
+
+        }else{
+            header('Location:/Gerencia-Obras/public?erro=1');
+
+        }
+
 
     }
 
