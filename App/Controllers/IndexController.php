@@ -12,7 +12,6 @@ namespace App\Controllers;
 use App\Models\usuario;
 use SON\Controller\Action;
 use SON\DI\Container;
-
 class IndexController extends Action {
 
     public function index(){
@@ -21,6 +20,7 @@ class IndexController extends Action {
 
     }
     public function login($request){
+
         session_start();
 
         $usuario = new usuario(null, null,$request['emailUsuario'], md5($request['senhaUsuario']));
@@ -32,5 +32,11 @@ class IndexController extends Action {
     }
     public function cadastroUsuario(){
 
+    }
+    public function logout(){
+        session_start();
+
+        $usuario = new usuario();
+        $usuario->logout();
     }
 }

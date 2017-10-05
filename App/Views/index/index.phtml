@@ -1,4 +1,7 @@
+<?php
+$erro = isset($_GET['erro']) ? $_GET['erro']: null;
 
+?>
 <!DOCTYPE html>
 <html lang="pt-br" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -13,7 +16,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/377f60039f.js"></script>
 </head>
-<body>
 <style>
     .sameWidth {
         width: 120%;
@@ -21,6 +23,7 @@
     }
 
 </style>
+<body>
 <br>
 <br>
 <!-- Fomulário de Login de usuario -->

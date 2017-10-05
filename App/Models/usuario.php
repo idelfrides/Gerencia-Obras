@@ -70,6 +70,13 @@ class usuario extends Table{
 
 
     }
+    public function logout(){
+        unset($_SESSION['nivelAcessoUsuario']);
+        unset($_SESSION['id']);
+        unset($_SESSION['emailUsuario']);
+        unset($_SESSION['nomeUsuario']);
+        header('Location:/Gerencia-Obras/public/');
+    }
 
     /**
      * @return \PDO
