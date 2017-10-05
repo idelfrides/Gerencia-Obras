@@ -75,7 +75,7 @@ class usuario extends Table{
         unset($_SESSION['id']);
         unset($_SESSION['emailUsuario']);
         unset($_SESSION['nomeUsuario']);
-        header('Location:/Gerencia-Obras/public/');
+        header('Location:/Gerencia-Obras/public/?erro=1');
     }
 
     /**
