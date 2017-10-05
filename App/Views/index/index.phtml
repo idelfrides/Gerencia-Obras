@@ -37,7 +37,7 @@ $erro = isset($_GET['erro']) ? $_GET['erro']: null;
         }
 
         .space{
-            margin-left: 24%;
+            margin-left: 35%;
         }
 
         .emailRec{
@@ -46,6 +46,10 @@ $erro = isset($_GET['erro']) ? $_GET['erro']: null;
 
         .space1{
             margin-top: 50px;
+        }
+
+        .space2{
+            margin-left: 29%;
         }
 
         .alerta{
@@ -94,6 +98,8 @@ if ($erro == 1){
 }
 ?>
 
+
+
 <!-- Fomulário de Login de usuario -->
 <form id="form_login" method="post" action="/Gerencia-Obras/public/login">
 
@@ -115,7 +121,7 @@ if ($erro == 1){
         </div>
 
         <p>
-            <button data-toggle="modal" data-target="#myModal" id="forgetPassword" name="forgetPassword" type="button" class="btn btn-link btn-sm btn-block" >Esqueci minha senha</button>
+            <button data-toggle="modal" data-target="#myModal1" id="forgetPassword" name="forgetPassword" type="button" class="btn btn-link btn-sm btn-block" >Esqueci minha senha</button>
         </p>
 
 
@@ -124,7 +130,7 @@ if ($erro == 1){
             <div class="row">
 
                 <div class="col col-6 form-group">
-                    <input id="cadastrarUsuario" name="cadastrarUsuario" type="button" value="Cadastrar-se" class="sameWidth btn btn-outline-info">
+                    <button data-toggle="modal" data-target="#myModal2" id="cadastrarUsuario" name="cadastrarUsuario" type="button" class="sameWidth btn btn-outline-info" >Cadastrar-se</button>
                 </div>
 
                 <div class="col col-6 form-group">
@@ -146,7 +152,7 @@ if ($erro == 1){
 
 <!-- Modal -->
 <form method="post" action="#">
-<div class="modal fade space1" id="myModal" role="dialog">
+<div class="modal fade space1" id="myModal1" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->
@@ -159,7 +165,7 @@ if ($erro == 1){
             <div class="modal-body">
                 <div  >
                     <div  class="row">
-                        <div>
+                        <div class="col-sm-5 col-5 col-md-5 col-lg-5 col-xl-5">
                             <div class="form-group">
                                 <label class="space" for="emeilRecovery">Email:</label>
                                 <input  class="form-control space emailRec" id="emeilRecovery" name="emeilRecovery" placeholder="exemplo@exemplo.com" type="email" required>
@@ -180,6 +186,95 @@ if ($erro == 1){
 </form>
 
 <!-- / Fomulário de Login -->
+
+    <!-- Fomulário de Cadastro de usuario -->
+    <form method="post" action="#">
+        <div class="modal fade space1" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title titleModal col-11">Cadastro de Usuário</h4>
+                        <button type="button" class="close col-1" data-dismiss="modal">&times;</button>
+
+                    </div>
+                    <div class="modal-body">
+
+                        <div  class="conteiner">
+                            <div>
+                              <div class="row">
+                                <div class="col-md-8 ">
+                                    <form  id="form_login" method="post" action="/Gerencia-Obras/public/login">
+                                        
+                                     
+
+                                        <div class="row ">
+                                            <div class="form-group col-sm-8 col-8 col-md-12">
+                                                <label class="space2" for="emailCadastro">Email:</label>
+                                                <input  class="form-control space2 emailCadastro" id="emeilCadastro" name="emeilRecovery" placeholder="exemplo@exemplo.com" type="email" required>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row ">
+                                            <div class="form-group col-sm-8 col-8 col-md-12">
+                                                <label class="space2" for="nomeCadastro">Nome Completo:</label>
+                                                <input class="form-control space2" type="text" name="nomeCadastro" id="nomeCadastro" placeholder="Nome do usuário" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row ">
+
+                                            <div class="form-group col-sm-8 col-8 col-md-12">
+                                                <label class="space2" for="endCadastro">Endereço:</label>
+                                                <input class="form-control space2" type="text" name="endCadastro" id="endCadastro" placeholder="Endereço" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row ">
+
+                                            <div class="form-group col-sm-8 col-8 col-md-12">
+                                                <label class="space2" for="empresaCadastro">Empresa:</label>
+                                                <input class="form-control space2" type="text" name="empresaCadastro" id="empresaCadastro" placeholder="Empresa" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row ">
+
+                                            <div class="form-group col-sm-8 col-8 col-md-12">
+                                                <label class="space2" for="cpfCadastro">CPF:</label>
+                                                <input class="form-control space2" type="text" name="cpfCadastro" id="cpfCadastro" placeholder="XXX.XXX.XXX-XX" required>
+                                            </div>
+                                        </div>
+
+                                        
+                                            <div class="form-group col-sm-8 col-8 col-md-12">
+                                                <label class="space2" for="senhaCadastro">Senha:</label>
+                                                <input class="form-control space2" type="password" name="senhaCadastro" id="senhaCadastro" placeholder="Senha do usuário" required>
+                                            </div>
+
+                                            <div class="form-group col-sm-8 col-8 col-md-12">
+                                                <label class="space2" for="senha2Cadastro">Confirme a Senha:</label>
+                                                <input class="form-control space2" type="password" name="senha2Cadastro" id="senha2Cadastro" placeholder="Confirmar Senha" required>
+                                            </div>
+                                        
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" name="solicitaCadastro" id="solicitaCadastro" class="btn btn-success" data-dismiss="modal">Cadastrar-se</button>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+</form>  
 
 <footer>
 
