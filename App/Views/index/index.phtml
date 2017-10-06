@@ -88,7 +88,7 @@ if ($erro == 1){
                 $("#failRecovery").fadeOut(5000);
             });
             </script>';
-}else if ($erro == 0){
+}else if ($erro == 0 and $erro != null){
     echo'<script type="text/javascript">
             $(document).ready(function(){
                  $("#successRecovery").fadeIn(400);
@@ -188,7 +188,6 @@ if ($erro == 1){
 <!-- / Fomulário de Login -->
 
     <!-- Fomulário de Cadastro de usuario -->
-    <form method="post" action="#">
         <div class="modal fade space1" id="myModal2" role="dialog">
             <div class="modal-dialog">
 
@@ -200,81 +199,68 @@ if ($erro == 1){
                     </div>
                     <div class="modal-body">
 
-                        <div  class="conteiner">
-                            <div>
-                              <div class="row">
-                                <div class="col-md-8 ">
-                                    <form  id="form_login" method="post" action="/Gerencia-Obras/public/login">
-                                        
-                                     
+                        <div  class="container">
+                            <form  id="form_cadastro" method="get" action="/Gerencia-Obras/public/cadastro">
 
-                                        <div class="row ">
-                                            <div class="form-group col-sm-8 col-8 col-md-12">
-                                                <label class="space2" for="emailCadastro">Email:</label>
-                                                <input  class="form-control space2 emailCadastro" id="emeilCadastro" name="emeilRecovery" placeholder="exemplo@exemplo.com" type="email" required>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row ">
-                                            <div class="form-group col-sm-8 col-8 col-md-12">
-                                                <label class="space2" for="nomeCadastro">Nome Completo:</label>
-                                                <input class="form-control space2" type="text" name="nomeCadastro" id="nomeCadastro" placeholder="Nome do usuário" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="row ">
-
-                                            <div class="form-group col-sm-8 col-8 col-md-12">
-                                                <label class="space2" for="endCadastro">Endereço:</label>
-                                                <input class="form-control space2" type="text" name="endCadastro" id="endCadastro" placeholder="Endereço" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="row ">
-
-                                            <div class="form-group col-sm-8 col-8 col-md-12">
-                                                <label class="space2" for="empresaCadastro">Empresa:</label>
-                                                <input class="form-control space2" type="text" name="empresaCadastro" id="empresaCadastro" placeholder="Empresa" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="row ">
-
-                                            <div class="form-group col-sm-8 col-8 col-md-12">
-                                                <label class="space2" for="cpfCadastro">CPF:</label>
-                                                <input class="form-control space2" type="text" name="cpfCadastro" id="cpfCadastro" placeholder="XXX.XXX.XXX-XX" required>
-                                            </div>
-                                        </div>
-
-                                        
-                                            <div class="form-group col-sm-8 col-8 col-md-12">
-                                                <label class="space2" for="senhaCadastro">Senha:</label>
-                                                <input class="form-control space2" type="password" name="senhaCadastro" id="senhaCadastro" placeholder="Senha do usuário" required>
-                                            </div>
-
-                                            <div class="form-group col-sm-8 col-8 col-md-12">
-                                                <label class="space2" for="senha2Cadastro">Confirme a Senha:</label>
-                                                <input class="form-control space2" type="password" name="senha2Cadastro" id="senha2Cadastro" placeholder="Confirmar Senha" required>
-                                            </div>
-                                        
-
-                                    </form>
+                                <div class="row">
+                                    <div class="form-group col-sm-8 col-2 col-md-8">
+                                        <label class="space2" for="emailCadastro">Email:</label>
+                                        <input  class="form-control space2 emailCadastro" id="emeilCadastro" name="emeilRecovery" placeholder="exemplo@exemplo.com" type="email" required>
+                                    </div>
                                 </div>
-                            </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-8 col-8 col-md-8">
+                                        <label class="space2" for="nomeCadastro">Nome Completo:</label>
+                                        <input class="form-control space2" type="text" name="nomeCadastro" id="nomeCadastro" placeholder="Nome do usuário" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-8 col-8 col-md-8">
+                                        <label class="space2" for="endCadastro">Endereço:</label>
+                                        <input class="form-control space2" type="text" name="endCadastro" id="endCadastro" placeholder="Endereço" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-8 col-8 col-md-8">
+                                        <label class="space2" for="empresaCadastro">Empresa:</label>
+                                        <input class="form-control space2" type="text" name="empresaCadastro" id="empresaCadastro" placeholder="Empresa" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-8 col-8 col-md-8">
+                                        <label class="space2" for="cpfCadastro">CPF:</label>
+                                        <input class="form-control space2" type="text" name="cpfCadastro" id="cpfCadastro" placeholder="XXX.XXX.XXX-XX" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-8 col-8 col-md-8">
+                                        <label class="space2" for="senhaCadastro">Senha:</label>
+                                        <input class="form-control space2" type="password" name="senhaCadastro" id="senhaCadastro" placeholder="Senha do usuário" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-8 col-8 col-md-8">
+                                        <label class="space2" for="nivelAcesso">Nivel de Acesso:</label>
+                                        <input class="form-control space2" type="number" name="nivelAcesso" id="nivelAcesso" placeholder="Nivel de acesso" min="0" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-8 col-8 col-md-8">
+                                        <div class="modal-footer">
+                                            <input type="submit" name="solicitaCadastro" id="solicitaCadastro" class="btn btn-success" value="Cadastrar-se">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                </div>
+                            </form>
                         </div>
                     </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" name="solicitaCadastro" id="solicitaCadastro" class="btn btn-success" data-dismiss="modal">Cadastrar-se</button>
-                </div>
-
             </div>
             
         </div>
     </div>
-</form>  
 
 <footer>
 
@@ -282,7 +268,6 @@ if ($erro == 1){
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-
 </body>
 </html>
 

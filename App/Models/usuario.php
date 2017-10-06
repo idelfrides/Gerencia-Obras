@@ -21,8 +21,8 @@ class usuario extends Table{
     private $senhaUsuario;
     private $enderecoUsuario;
     private $cpfUsuario;
-    private $rgUsuario;
     private $empresaUsuario;
+    private $nivelAcesso;
 
     /**
      * usuario constructor.
@@ -34,8 +34,9 @@ class usuario extends Table{
      * @param $cpfUsuario
      * @param $rgUsuario
      * @param $empresaUsuario
+     * @param $nivelAcesso
      */
-    public function __construct($id=null, $nomeUsuario=null, $emailUsuario=null, $senhaUsuario=null, $enderecoUsuario=null, $cpfUsuario=null, $rgUsuario=null, $empresaUsuario=null)
+    public function __construct($id=null, $nomeUsuario=null, $emailUsuario=null, $senhaUsuario=null, $enderecoUsuario=null, $cpfUsuario=null, $empresaUsuario=null, $nivelAcesso=null)
     {
         $this->id = $id;
         $this->nomeUsuario = $nomeUsuario;
@@ -43,8 +44,9 @@ class usuario extends Table{
         $this->senhaUsuario = $senhaUsuario;
         $this->enderecoUsuario = $enderecoUsuario;
         $this->cpfUsuario = $cpfUsuario;
-        $this->rgUsuario = $rgUsuario;
         $this->empresaUsuario = $empresaUsuario;
+        $this->nivelAcesso = $nivelAcesso;
+
     }
     public function validarLogin(){
 
@@ -55,6 +57,7 @@ class usuario extends Table{
         $query = "select * from usuario WHERE emailUsuario = '$this->emailUsuario'";
         $resultado = mysqli_query($cone, $query);
         $row = mysqli_fetch_array($resultado);
+        mysqli_close($cone);
 
         if ($row['senhaUsuario'] == $this->senhaUsuario){
             $_SESSION['nivelAcessoUsuario'] = $row['nivelAcessoUsuario'];
@@ -75,8 +78,35 @@ class usuario extends Table{
         unset($_SESSION['id']);
         unset($_SESSION['emailUsuario']);
         unset($_SESSION['nomeUsuario']);
-        header('Location:/Gerencia-Obras/public/?erro=1');
+        header('Location:/Gerencia-Obras/public/');
     }
+    public function cadastro(){
+        $connexao = new Conn();
+
+        $cone = $connexao->getCon();
+
+        $query = "select * from `gerenciaObras`.`usuario` WHERE emailUsuario = '$this->emailUsuario'";
+
+        $resultado = mysqli_query($cone, $query);
+        $resultado = mysqli_num_rows($resultado);
+        if ($resultado == 1){
+            header('Location:/Gerencia-Obras/public/?erro=1');
+        }else{
+
+            $query = "INSERT INTO `gerenciaObras`.`usuario` (`id`, `nomeUsuario`, `emailUsuario`, `senhaUsuario`, `enderecoUsuario`, `cpfUsuario`, `empresaUsuario`, `nivelAcessoUsuario`) VALUES (0, '$this->nomeUsuario', '$this->emailUsuario', '$this->senhaUsuario', '$this->enderecoUsuario', '$this->cpfUsuario', '$this->empresaUsuario','$this->nivelAcesso')";
+            $resul = mysqli_query($cone, $query);
+            mysqli_close($cone);
+            if ($resul != null){
+
+                header('Location:/Gerencia-Obras/public/?erro=0');
+
+            }else{
+                header('Location:/Gerencia-Obras/public/?erro=1');
+
+            }
+        }
+    }
+
 
     /**
      * @return \PDO
@@ -204,6 +234,22 @@ class usuario extends Table{
     public function setEmpresaUsuario($empresaUsuario)
     {
         $this->empresaUsuario = $empresaUsuario;
+    }
+
+    /**
+     * @return null
+     */
+    public function getNivelAcesso()
+    {
+        return $this->nivelAcesso;
+    }
+
+    /**
+     * @param null $nivelAcesso
+     */
+    public function setNivelAcesso($nivelAcesso)
+    {
+        $this->nivelAcesso = $nivelAcesso;
     }
 
 }
