@@ -85,7 +85,7 @@ class usuario extends Table{
 
         $cone = $connexao->getCon();
 
-        $query = "select * from `gerenciaObras`.`usuario` WHERE emailUsuario = '$this->emailUsuario'";
+        $query = "select * from `gerenciaObras`.`usuario` WHERE emailUsuario = '$this->emailUsuario' and cpfUsuario='$this->cpfUsuario'";
 
         $resultado = mysqli_query($cone, $query);
         $resultado = mysqli_num_rows($resultado);
