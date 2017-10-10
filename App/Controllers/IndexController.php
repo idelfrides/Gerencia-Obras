@@ -31,10 +31,13 @@ class IndexController extends Action {
         $this->render("home");
     }
     public function cadastroUsuario($request){
+
+        //Criando hash da senha
         $request['senhaCadastro'] = md5($request['senhaCadastro']);
        // echo $request['nomeCadastro'].'<br>'. $request['emeilRecovery'].'<br>'. $request['senhaCadastro']. '<br>'.$request['endCadastro'].'<br>'. $request['cpfCadastro'].'<br>'.$request['empresaCadastro'].'<br>'.$request['nivelAcesso'];
         $usuario = new usuario(0,$request['nomeCadastro'], $request['emeilRecovery'], $request['senhaCadastro'], $request['endCadastro'], $request['cpfCadastro'], $request['empresaCadastro'], $request['nivelAcesso']);
         $usuario->cadastro();
+
     }
     public function logout(){
         session_start();
