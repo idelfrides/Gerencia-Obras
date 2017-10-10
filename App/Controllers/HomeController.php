@@ -13,6 +13,10 @@ use SON\Controller\Action;
 use SON\DI\Container;
 class HomeController extends Action{
 
-
+    /*
+     *
+     * Controlar o Home
+     *
+     */
 
 }

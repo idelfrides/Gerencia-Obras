@@ -13,12 +13,13 @@ use App\Models\usuario;
 use SON\Controller\Action;
 use SON\DI\Container;
 class IndexController extends Action {
-
+    //Funcao para renderizar o layout do index
     public function index(){
 
         $this->render("index",false);
 
     }
+    //Funcao para validar o login e criar as variaveis da sessao
     public function login($request){
 
         session_start();
@@ -27,9 +28,11 @@ class IndexController extends Action {
         $usuario->validarLogin();
 
     }
+    //funcao para rendenrizar o layout de home
     public function home(){
         $this->render("home");
     }
+    //funcao para cadastro de usuario
     public function cadastroUsuario($request){
 
         //Criando hash da senha
@@ -39,6 +42,7 @@ class IndexController extends Action {
         $usuario->cadastro();
 
     }
+    //Funcao para logout
     public function logout(){
         session_start();
 
