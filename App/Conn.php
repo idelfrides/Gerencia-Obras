@@ -14,7 +14,7 @@ class Conn{
     public static function getDb(){
         return new \PDO("mysql:host=localhost;dbname=gerenciaObras","root","");
     } 
-    public  function getCon(){
+    public static function getCon(){
         $con = mysqli_connect("localhost", "root", null, "gerenciaObras");
         mysqli_set_charset($con, 'utf-8');
         //verificar se houve erro de conexao

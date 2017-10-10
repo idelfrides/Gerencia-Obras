@@ -52,7 +52,7 @@ class usuario extends Table{
 
         $connexao = new Conn();
 
-        $cone = $connexao->getCon();
+        $cone = $connexao::getCon();
 
         $query = "select * from usuario WHERE emailUsuario = '$this->emailUsuario'";
         $resultado = mysqli_query($cone, $query);
@@ -83,7 +83,7 @@ class usuario extends Table{
     public function cadastro(){
         $connexao = new Conn();
 
-        $cone = $connexao->getCon();
+        $cone = $connexao::getCon();
 
         $query = "select * from `gerenciaObras`.`usuario` WHERE emailUsuario = '$this->emailUsuario' and cpfUsuario='$this->cpfUsuario'";
 
