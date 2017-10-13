@@ -18,5 +18,7 @@ class HomeController extends Action{
      * Controlar o Home
      *
      */
-
+    public function cadastroCliente(){
+        $this->render("cadastroCliente");
+    }
 }

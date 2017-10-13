@@ -17,6 +17,7 @@ class Route extends Bootstrap {
         $routes['home'] = array('route'=>'/Gerencia-Obras/public/home', 'controller'=>"indexController",'action'=>'home');
         $routes['cadastro'] = array('route'=>'/Gerencia-Obras/public/cadastro', 'controller'=>"indexController",'action'=>'cadastroUsuario');
         $routes['logout'] = array('route'=>'/Gerencia-Obras/public/logout', 'controller'=>"indexController",'action'=>'logout');
+        $routes['cadastroCliente'] = array('route'=>'/Gerencia-Obras/public/home/cadastro/cliente', 'controller'=>"homeController",'action'=>'cadastroCliente');
 
 
         $this->setRoutes($routes);

@@ -13,6 +13,7 @@ abstract class Action{
 
     protected $views;
     private $action;
+    private $css;
 
     public function __construct(){
 
@@ -33,4 +34,5 @@ abstract class Action{
         $singleClasName = strtolower((str_replace("Controller", "", str_replace("App\\Controllers\\","", $current))));
         include_once "../App/Views/".$singleClasName."/".$this->action.".phtml";
     }
+
 }

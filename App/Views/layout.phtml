@@ -16,8 +16,9 @@ if (!isset($_SESSION['nivelAcessoUsuario'])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/377f60039f.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="../assets/css/menu.css">
 
+    <!--<link rel="stylesheet" type="text/css" href="/public/App/assets/css/menu.css">-->
+    <style><?php include_once "../App/assets/css/menu.css"; ?></style>
 </head>
 <body>
 
@@ -60,9 +61,9 @@ if (!isset($_SESSION['nivelAcessoUsuario'])){
                             <div class="row">
                                 
                                 <div class="col-lg-8 ">
-                                    <p class="text-center small">email@email<?php echo $_SESSION['emailUsuario'] ?></p>
+                                    <p class="text-center small"><?php echo $_SESSION['emailUsuario'] ?></p>
                                    
-                                   <a href="logout" id="logout" name="logout" class="btn btn-danger btn-block sairLog">Sair <i class="fa  fa-sign-out" aria-hidden="true"></i></a>
+                                   <a href="/Gerencia-Obras/public/logout" id="logout" name="logout" class="btn btn-danger btn-block sairLog">Sair <i class="fa  fa-sign-out" aria-hidden="true"></i></a>
                                    <hr>
                                 </div>
                             </div>
@@ -80,7 +81,7 @@ if (!isset($_SESSION['nivelAcessoUsuario'])){
                     <i class="fa fa-angle-down iconDown" aria-hidden="true"></i>
                 </a>
                   <ul class=" collapse" id="collapseCadastro" role="tabpanel">
-                    <li class=""><a href="" class="menuLateralA subMenu">Clientes</a></li>
+                    <li class=""><a href="/Gerencia-Obras/public/home/cadastro/cliente" class="menuLateralA subMenu">Clientes</a></li>
                     <hr>
                   </ul>
             </li>
@@ -96,18 +97,9 @@ if (!isset($_SESSION['nivelAcessoUsuario'])){
     </div>
 
 <div class="conteudo col col-9">
-       
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at augue nec nunc fermentum imperdiet in in mauris. Suspendisse sollicitudin arcu velit, vitae mattis ex convallis id. Cras tristique id elit eu sollicitudin. Quisque volutpat pulvinar tincidunt. Nam id tempor mauris, quis facilisis magna. Sed vestibulum libero rhoncus nisl sagittis, id facilisis augue ultrices. Duis molestie odio ac felis eleifend, ut sodales eros posuere. Mauris viverra sem vel turpis fermentum, at pretium odio maximus. Nulla at dui sit amet lorem laoreet dignissim a id velit. Nam vel ex vehicula, finibus nisl a, sagittis dui. Pellentesque porta volutpat erat eget feugiat. Pellentesque ut finibus nibh. Nunc ut lorem in lorem varius lobortis. Integer sit amet velit vestibulum, ullamcorper risus non, feugiat massa.
 
-Phasellus ut justo et ante feugiat placerat. Etiam eu dui nec est dictum commodo. Nam nec suscipit diam. Cras posuere placerat urna sed tincidunt. Aliquam mollis mi sed augue tincidunt auctor. Integer consequat placerat nisi sed cursus. Sed urna diam, feugiat in auctor ac, vestibulum ac nibh. Cras ligula justo, sodales eget elementum eget, gravida et sapien. Praesent eget tristique justo. Nullam vel magna accumsan, malesuada justo sit amet, posuere nulla. Aliquam at hendrerit metus. Maecenas feugiat sollicitudin consequat. Nullam eleifend sed neque nec dictum.
-
-Duis sed odio commodo, sagittis tortor eget, eleifend sem. Fusce nulla dui, fringilla a facilisis sit amet, placerat vel metus. Nulla sodales tincidunt egestas. Sed pulvinar, turpis quis tincidunt eleifend, erat elit luctus nibh, in imperdiet mauris dui a lorem. In tincidunt mollis risus sed pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean mattis tortor est, sed eleifend mauris sollicitudin vel. Maecenas dapibus enim augue, vel bibendum mi rutrum at. Phasellus at viverra erat, et volutpat dui. Ut sed nibh efficitur justo tempor viverra. Nunc felis tortor, auctor a commodo at, tristique viverra dui. Suspendisse vulputate non quam non rutrum. Mauris gravida turpis eget ante tempus, nec hendrerit dui placerat. Nullam felis felis, feugiat nec mi id, convallis tristique justo. Sed accumsan, orci at vestibulum cursus, ligula urna varius sapien, id sollicitudin justo nisl et ex.
-
-Morbi sit amet lacus nec purus consectetur pharetra. In et tempor eros, quis mollis mauris. Phasellus faucibus, dui quis eleifend feugiat, leo odio imperdiet ante, ut mollis justo lacus non erat. Quisque ornare euismod turpis, eget consectetur leo. Suspendisse velit libero, egestas ac augue non, ultrices dignissim ante. Curabitur interdum nisl rhoncus condimentum elementum. Fusce tincidunt lectus vel enim ullamcorper, vel tincidunt urna mollis.
-
-Duis nec leo feugiat, condimentum est sit amet, mollis tortor. Sed porttitor mauris leo, sed cursus justo sollicitudin ac. Vivamus ultricies justo tortor, nec imperdiet quam tristique id. Curabitur semper aliquam pretium. Nulla vitae lorem ipsum. Pellentesque a massa nec turpis tempus vulputate in id quam. Aliquam consequat dolor ut augue vehicula, convallis mattis risus euismod. Etiam in leo rhoncus, semper urna vestibulum, ultricies nulla.
-
-        </div>
+    <?php $this->content() ?>
+</div>
 
     </div>
 </div>

@@ -49,4 +49,5 @@ class IndexController extends Action {
         $usuario = new usuario();
         $usuario->logout();
     }
+
 }
