@@ -138,6 +138,7 @@ p{
 }
 
 label{
+    /*
     display:block;
     font-family:'helvetica neue', helvetica, arial, sans-serif;
     font-weight:700;
@@ -158,11 +159,61 @@ label{
     transition:all 200ms ease-in;
     z-index:500;
     background-color: rgba(10,23,55,0);
+    */
+
+    /*
+
+   trocar essa parte, ta criando bug
+     */
 }
 .iconSide{
 
 }
+.sameWidth {
+    width: 120%;
 
+}
+
+.titleModal{
+    margin-left: 0px;
+}
+
+.space{
+    margin-left: 35%;
+}
+
+.emailRec{
+    width: 200%;
+}
+
+.space1{
+    margin-top: 50px;
+}
+
+.space2{
+    margin-left: 29%;
+}
+
+.alerta{
+    display: none;
+    position: fixed;
+    margin-top: 0px;
+    margin-left: 70%;
+    width: 25%;
+}
+form#form_login{
+    margin-top: 5%;
+}
+
+legend{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.sameWidth {
+    width: 120%;
+
+}
 input[type="checkbox"] ~ .menuLateral{
     width: 0px;
 

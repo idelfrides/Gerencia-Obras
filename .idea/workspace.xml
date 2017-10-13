@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26588820-dac1-4658-a60c-18146e26e2c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Models/Cliente.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/App/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Route.php" afterPath="$PROJECT_DIR$/App/Route.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" afterPath="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/assets/css/menu.css" afterPath="$PROJECT_DIR$/App/assets/css/menu.css" />
     </list>
@@ -43,11 +40,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="layout.phtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Views/layout.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="41" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1507930113000" expanded="true" signature="847:861" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="menu.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/assets/css/menu.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="173" column="22" lean-forward="true" selection-start-line="173" selection-start-column="22" selection-end-line="173" selection-end-column="22" />
+            <state relative-caret-position="784">
+              <caret line="165" column="36" lean-forward="false" selection-start-line="165" selection-start-column="36" selection-end-line="165" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -56,8 +66,8 @@
       <file leaf-file-name="cadastroCliente.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -129,9 +139,9 @@
         <option value="$PROJECT_DIR$/vendor/SON/Controller/Action.php" />
         <option value="$PROJECT_DIR$/App/Views/layout.phtml" />
         <option value="$PROJECT_DIR$/App/Route.php" />
-        <option value="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" />
         <option value="$PROJECT_DIR$/App/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/App/Models/Cliente.php" />
+        <option value="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" />
         <option value="$PROJECT_DIR$/App/assets/css/menu.css" />
       </list>
     </option>
@@ -454,7 +464,7 @@
       <workItem from="1507564165754" duration="762000" />
       <workItem from="1507635395795" duration="2856000" />
       <workItem from="1507649461951" duration="579000" />
-      <workItem from="1507675651715" duration="5245000" />
+      <workItem from="1507675651715" duration="6771000" />
     </task>
     <task id="LOCAL-00001" summary="Criando a estrutura do projeto. Criado o autoload, e os diretorios, php minimo 7.1">
       <created>1507077846335</created>
@@ -631,11 +641,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507930657857</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="corrigindo menu  css">
+      <created>1507931777734</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1507931777734</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70895000" />
+    <option name="totallyTimeSpent" value="72421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="986" extended-state="6" />
@@ -727,7 +744,8 @@
     <MESSAGE value="atualizando o sql" />
     <MESSAGE value="Colocando metedo getConn como statico" />
     <MESSAGE value="importando o css para layout, colocando o form de cadastro de cliente no lugar correto" />
-    <option name="LAST_COMMIT_MESSAGE" value="importando o css para layout, colocando o form de cadastro de cliente no lugar correto" />
+    <MESSAGE value="corrigindo menu  css" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrigindo menu  css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -966,17 +984,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Views/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="83" column="43" lean-forward="false" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1507930113000" expanded="true" signature="847:861" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/cadastroCliente.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1016,14 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1042,10 +1041,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Views/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="41" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1507930113000" expanded="true" signature="847:861" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/assets/css/menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="173" column="22" lean-forward="true" selection-start-line="173" selection-start-column="22" selection-end-line="173" selection-end-column="22" />
+        <state relative-caret-position="784">
+          <caret line="165" column="36" lean-forward="false" selection-start-line="165" selection-start-column="36" selection-end-line="165" selection-end-column="36" />
           <folding />
         </state>
       </provider>
