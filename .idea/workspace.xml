@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="26588820-dac1-4658-a60c-18146e26e2c4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" afterPath="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/assets/css/menu.css" afterPath="$PROJECT_DIR$/App/assets/css/menu.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -464,7 +462,7 @@
       <workItem from="1507564165754" duration="762000" />
       <workItem from="1507635395795" duration="2856000" />
       <workItem from="1507649461951" duration="579000" />
-      <workItem from="1507675651715" duration="6771000" />
+      <workItem from="1507675651715" duration="6984000" />
     </task>
     <task id="LOCAL-00001" summary="Criando a estrutura do projeto. Criado o autoload, e os diretorios, php minimo 7.1">
       <created>1507077846335</created>
@@ -648,11 +646,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507931777734</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="corrigindo menu  css">
+      <created>1507934544343</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1507934544343</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72421000" />
+    <option name="totallyTimeSpent" value="72634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="986" extended-state="6" />
