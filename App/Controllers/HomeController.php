@@ -21,4 +21,12 @@ class HomeController extends Action{
     public function cadastroCliente(){
         $this->render("cadastroCliente");
     }
+    public function formCliente($request){
+         $request['nomeCliente'] = $nomeCliente;
+         $request['endCliente'] = $endCliente;
+         $request['empresaCliente'] = $empresaCliente;
+         $request['cpfCliente'] = $cpfCliente;
+         $request['emailCliente'] = $emailCliente;
+         $request['telefoneCliente'] = $telefoneCliente;
+    }
 }

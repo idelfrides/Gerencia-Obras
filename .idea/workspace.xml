@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26588820-dac1-4658-a60c-18146e26e2c4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Models/Cliente.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/App/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Controllers/IndexController.php" afterPath="$PROJECT_DIR$/App/Controllers/IndexController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Route.php" afterPath="$PROJECT_DIR$/App/Route.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Views/layout.phtml" afterPath="$PROJECT_DIR$/App/Views/layout.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/cadastroCliente.phtml" afterPath="$PROJECT_DIR$/example/cadastroCliente.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/SON/Controller/Action.php" afterPath="$PROJECT_DIR$/vendor/SON/Controller/Action.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" afterPath="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/assets/css/menu.css" afterPath="$PROJECT_DIR$/App/assets/css/menu.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,76 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Controllers/IndexController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding>
-                <element signature="e#126#149#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cadastroCliente.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/cadastroCliente.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.phtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/Views/layout.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="83" column="43" lean-forward="false" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
-              <folding>
-                <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1507930113000" expanded="true" signature="847:861" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Action.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/SON/Controller/Action.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/assets/css/menu.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="173" column="25" lean-forward="false" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="360">
+              <caret line="29" column="56" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="29" selection-end-column="56" />
               <folding>
                 <element signature="e#126#152#0#PHP" expanded="true" />
               </folding>
@@ -100,21 +33,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newPassword.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/newPassword.html">
+      <file leaf-file-name="Cliente.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/Models/Cliente.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-98">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cadastroCliente.phtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/assets/css/menu.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="173" column="22" lean-forward="true" selection-start-line="173" selection-start-column="22" selection-end-line="173" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cadastroCliente.phtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state relative-caret-position="117">
+              <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -123,8 +66,8 @@
       <file leaf-file-name="Route.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Route.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="97" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="97" />
+            <state relative-caret-position="300">
+              <caret line="20" column="154" lean-forward="false" selection-start-line="20" selection-start-column="143" selection-end-line="20" selection-end-column="154" />
               <folding>
                 <element signature="e#6#95#0#PHP" expanded="true" />
               </folding>
@@ -181,14 +124,15 @@
         <option value="$PROJECT_DIR$/App/Conn.php" />
         <option value="$PROJECT_DIR$/App/Models/usuario.php" />
         <option value="$PROJECT_DIR$/example/descricao" />
-        <option value="$PROJECT_DIR$/App/Route.php" />
         <option value="$PROJECT_DIR$/App/Controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/example/cadastroCliente.phtml" />
-        <option value="$PROJECT_DIR$/App/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/App/assets/css/menu.css" />
         <option value="$PROJECT_DIR$/vendor/SON/Controller/Action.php" />
         <option value="$PROJECT_DIR$/App/Views/layout.phtml" />
+        <option value="$PROJECT_DIR$/App/Route.php" />
         <option value="$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml" />
+        <option value="$PROJECT_DIR$/App/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/App/Models/Cliente.php" />
+        <option value="$PROJECT_DIR$/App/assets/css/menu.css" />
       </list>
     </option>
   </component>
@@ -510,7 +454,7 @@
       <workItem from="1507564165754" duration="762000" />
       <workItem from="1507635395795" duration="2856000" />
       <workItem from="1507649461951" duration="579000" />
-      <workItem from="1507675651715" duration="4112000" />
+      <workItem from="1507675651715" duration="5245000" />
     </task>
     <task id="LOCAL-00001" summary="Criando a estrutura do projeto. Criado o autoload, e os diretorios, php minimo 7.1">
       <created>1507077846335</created>
@@ -680,11 +624,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507649484323</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="importando o css para layout, colocando o form de cadastro de cliente no lugar correto">
+      <created>1507930657857</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1507930657857</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69762000" />
+    <option name="totallyTimeSpent" value="70895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="986" extended-state="6" />
@@ -775,14 +726,14 @@
     <MESSAGE value="alterando formulario de cadastro, criando funcao de cadastro de usuario" />
     <MESSAGE value="atualizando o sql" />
     <MESSAGE value="Colocando metedo getConn como statico" />
-    <option name="LAST_COMMIT_MESSAGE" value="Colocando metedo getConn como statico" />
+    <MESSAGE value="importando o css para layout, colocando o form de cadastro de cliente no lugar correto" />
+    <option name="LAST_COMMIT_MESSAGE" value="importando o css para layout, colocando o form de cadastro de cliente no lugar correto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/Views/index.phtml" />
     <entry file="file://$PROJECT_DIR$/App/Model/usuario.php" />
     <entry file="file://$PROJECT_DIR$/App/Views/index/contact.phtml" />
     <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
@@ -902,27 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Views/index/home.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Views/index/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3375">
-          <caret line="225" column="15" lean-forward="false" selection-start-line="225" selection-start-column="15" selection-end-line="225" selection-end-column="15" />
-          <folding>
-            <marker date="1507312947000" expanded="true" signature="3041:3221" ph="..." />
-            <marker date="1507312947000" expanded="true" signature="3083:3198" ph="{...}" />
-            <marker date="1507312947000" expanded="true" signature="3305:3490" ph="..." />
-            <marker date="1507312947000" expanded="true" signature="3347:3467" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gerenciaObras.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1010,16 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="e#126#152#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1046,24 +966,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/assets/css/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="173" column="25" lean-forward="false" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/Route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="97" lean-forward="true" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="97" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Views/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1083,10 +985,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/App/Views/index/home.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Views/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3375">
+          <caret line="225" column="15" lean-forward="false" selection-start-line="225" selection-start-column="15" selection-end-line="225" selection-end-column="15" />
+          <folding>
+            <marker date="1507312947000" expanded="true" signature="3041:3221" ph="..." />
+            <marker date="1507312947000" expanded="true" signature="3083:3198" ph="{...}" />
+            <marker date="1507312947000" expanded="true" signature="3305:3490" ph="..." />
+            <marker date="1507312947000" expanded="true" signature="3347:3467" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="154" lean-forward="false" selection-start-line="20" selection-start-column="143" selection-end-line="20" selection-end-column="154" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/App/Views/home/cadastroCliente.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="117">
+          <caret line="65" column="41" lean-forward="false" selection-start-line="65" selection-start-column="41" selection-end-line="65" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="56" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="29" selection-end-column="56" />
+          <folding>
+            <element signature="e#126#152#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/Models/Cliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="40" column="20" lean-forward="false" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/assets/css/menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="173" column="22" lean-forward="true" selection-start-line="173" selection-start-column="22" selection-end-line="173" selection-end-column="22" />
           <folding />
         </state>
       </provider>
