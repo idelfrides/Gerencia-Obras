@@ -3,6 +3,8 @@ session_start();
 if (!isset($_SESSION['nivelAcessoUsuario'])){
     header('Location:/Gerencia-Obras/public?erro=1');
 }
+$erro = isset($_GET['erro']) ? $_GET['erro']: null;
+
 ?>
 
 <!DOCTYPE html>
@@ -95,6 +97,35 @@ if (!isset($_SESSION['nivelAcessoUsuario'])){
     </nav>
 
     </div>
+      <div id="successRecovery" class="alert alert-success alert-dismissible nav-fixed-top alerta" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Solicitação realizada com sucesso!</strong> Verifique seu email após alguns instantes.
+      </div>
+
+      <div id="failRecovery" class="alert alert-danger alert-dismissible navbar-fixed-top alerta" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <strong>Ocorreu um erro!</strong> Tente novamente após alguns instantes.
+      </div>
+
+
+      <?php
+      if ($erro == 1){
+          echo'<script type="text/javascript">
+            $(document).ready(function(){
+                 $("#failRecovery").fadeIn(1000);
+                $("#failRecovery").fadeOut(5000);
+            });
+            </script>';
+      }else if ($erro == 0 and $erro != null){
+          echo'<script type="text/javascript">
+            $(document).ready(function(){
+                 $("#successRecovery").fadeIn(400);
+                $("#successRecovery").fadeOut(5000);
+            });
+            </script>';
+      }
+      ?>
+
 
 <div class="conteudo col col-9">
 

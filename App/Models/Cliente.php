@@ -9,6 +9,8 @@
 namespace App\Models;
 
 
+use App\Conn;
+
 class Cliente{
 
 
@@ -40,7 +42,25 @@ private $telefoneCliente;
 
     public function cadastroCliente(){
 
-}
+        $connexao = new Conn();
+
+        $cone = $connexao::getCon();
+        $query = "INSERT INTO `gerenciaObras`.`cliente` (`id`, `nomeCliente`, `endCliente`, `empresaCliente`, `cnpfCliente`, `emailCliente`, `telefoneCliente`) VALUES (0, '$this->nomeCliente', '$this->endCliente', '$this->empresaCliente', '$this->cpfCliente', '$this->emailCliente', '$this->telefoneCliente')";
+
+        if ($resultado = mysqli_query($cone, $query)){
+            mysqli_close($cone);
+
+            header('Location:/Gerencia-Obras/public/home/cadastro/cliente?erro=0');
+
+        }else{
+            mysqli_close($cone);
+
+            header('Location:/Gerencia-Obras/public/home/cadastro/cliente?erro=1');
+
+        }
+
+
+    }
 
     /**
      * @return mixed

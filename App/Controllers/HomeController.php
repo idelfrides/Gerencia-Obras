@@ -9,6 +9,7 @@
 namespace App\Controllers;
 
 
+use App\Models\Cliente;
 use SON\Controller\Action;
 use SON\DI\Container;
 class HomeController extends Action{
@@ -22,11 +23,16 @@ class HomeController extends Action{
         $this->render("cadastroCliente");
     }
     public function formCliente($request){
-         $request['nomeCliente'] = $nomeCliente;
-         $request['endCliente'] = $endCliente;
-         $request['empresaCliente'] = $empresaCliente;
-         $request['cpfCliente'] = $cpfCliente;
-         $request['emailCliente'] = $emailCliente;
-         $request['telefoneCliente'] = $telefoneCliente;
+        $nomeCliente = $request['nomeCliente'];
+        $endCliente = $request['endCliente'];
+        $empresaCliente = $request['empresaCliente'];
+        $cpfCliente = $request['cpfCliente'];
+        $emailCliente = $request['emailCliente'];
+        $telefoneCliente = $request['telefoneCliente'];
+
+        $cliente  = new Cliente($nomeCliente, $endCliente, $empresaCliente, $cpfCliente, $emailCliente, $telefoneCliente);
+        $cliente->cadastroCliente();
+
+
     }
 }
